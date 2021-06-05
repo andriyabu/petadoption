@@ -67,6 +67,7 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   database: petadoption_production
   username: petadoption
   password: <%= ENV['PETADOPTION_DATABASE_PASSWORD'] %>
